@@ -135,7 +135,7 @@ public class NewBehaviourScript : MonoBehaviour
         }
 
         //8.클래스
-        Actor player = new Actor();
+        player player = new player();
         player.id = 0;
         player.name = "나법사";
         player.title = "현명한";
@@ -146,6 +146,7 @@ public class NewBehaviourScript : MonoBehaviour
 
         player.LevelUp();
         Debug.Log(player.name + "의 레벨은 " + player.level + " 입니다.");
+        Debug.Log(player.move());
     }
 
 

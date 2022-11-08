@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class player : Actor
 {
-    public void move()
+    public string move()
     {
-        return = "플레이어는 움직입니다.";
+        return "플레이어는 움직입니다.";
     }
 }
