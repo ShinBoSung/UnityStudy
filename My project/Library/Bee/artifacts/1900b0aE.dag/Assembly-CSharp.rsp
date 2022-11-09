@@ -357,6 +357,7 @@
 "Assets/Actor.cs"
 "Assets/keyboard_mouse.cs"
 "Assets/LifeCycle.cs"
+"Assets/Move.cs"
 "Assets/NewBehaviourScript.cs"
 "Assets/ObjectMove.cs"
 "Assets/player.cs"
