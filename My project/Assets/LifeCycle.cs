@@ -1,66 +1,66 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class LifeCycle : MonoBehaviour
 {
-    //ÃÊ±âÈ­
+    //ì´ˆê¸°í™”
     
-    //Awake : °ÔÀÓ ¿ÀºêÁ§Æ® »ý¼ºÇÒ ¶§, ÃÖÃÊ ½ÇÇà
+    //Awake : ê²Œìž„ ì˜¤ë¸Œì íŠ¸ ìƒì„±í•  ë•Œ, ìµœì´ˆ ì‹¤í–‰
     void Awake()
     {
-        Debug.Log("ÇÃ·¹ÀÌ¾î µ¥ÀÌÅÍ°¡ ÁØºñµÇ¾ú½À´Ï´Ù.");
+        Debug.Log("í”Œë ˆì´ì–´ ë°ì´í„°ê°€ ì¤€ë¹„ë˜ì—ˆìŠµë‹ˆë‹¤.");
     }
 
-    //È°¼ºÈ­
+    //í™œì„±í™”
 
-    //OnEnable : °ÔÀÓ ¿ÀºêÁ§Æ®°¡ È°¼ºÈ­ µÇ¾úÀ» ‹š
+    //OnEnable : ê²Œìž„ ì˜¤ë¸Œì íŠ¸ê°€ í™œì„±í™” ë˜ì—ˆì„ ë–„
     void OnEnable()
     {
-        Debug.Log("ÇÃ·¹ÀÌ¾î°¡ ·Î±×ÀÎÇß½À´Ï´Ù.");
+        Debug.Log("í”Œë ˆì´ì–´ê°€ ë¡œê·¸ì¸í–ˆìŠµë‹ˆë‹¤.");
     }
 
-    //Start : ¾÷µ¥ÀÌÆ® ½ÃÀÛ Á÷Àü, ÃÖÃÊ ½ÇÇà
+    //Start : ì—…ë°ì´íŠ¸ ì‹œìž‘ ì§ì „, ìµœì´ˆ ì‹¤í–‰
     void Start()
     {
-        Debug.Log("»ç³É Àåºñ¸¦ Ã¬°å½À´Ï´Ù.");
+        Debug.Log("ì‚¬ëƒ¥ ìž¥ë¹„ë¥¼ ì±™ê²¼ìŠµë‹ˆë‹¤.");
     }
     
-    //¹°¸®
+    //ë¬¼ë¦¬
 
-    //FixedUpdate : ¹°¸® ¿¬»ê ¾÷µ¥ÀÌÆ®(°íÁ¤µÈ ½ÇÇà ÁÖ±â·Î cpu¸¦ ¸¹ÀÌ »ç¿ë)
+    //FixedUpdate : ë¬¼ë¦¬ ì—°ì‚° ì—…ë°ì´íŠ¸(ê³ ì •ëœ ì‹¤í–‰ ì£¼ê¸°ë¡œ cpuë¥¼ ë§Žì´ ì‚¬ìš©)
     void FixedUpdate()
     {
-        Debug.Log("ÀÌµ¿~");
+        Debug.Log("ì´ë™~");
     }
 
-    //°ÔÀÓ ·ÎÁ÷
+    //ê²Œìž„ ë¡œì§
 
-    //Update : °ÔÀÓ ·ÎÁ÷ ¾÷µ¥ÀÌÆ®
+    //Update : ê²Œìž„ ë¡œì§ ì—…ë°ì´íŠ¸
     void Update()
     {
-        Debug.Log("¸ó½ºÅÍ »ç³É!!");
+        Debug.Log("ëª¬ìŠ¤í„° ì‚¬ëƒ¥!!");
     }
 
-    //LateUpdate : ¸ðµç ¾÷µ¥ÀÌÆ® ³¡³­ ÈÄ   
+    //LateUpdate : ëª¨ë“  ì—…ë°ì´íŠ¸ ëë‚œ í›„   
     void LateUpdate()
     {
-        Debug.Log("°æÇèÄ¡ È¹µæ");
+        Debug.Log("ê²½í—˜ì¹˜ íšë“");
     }
 
-    //ºñÈ°¼ºÈ­
+    //ë¹„í™œì„±í™”
 
     //OnDisable
     void OnDisable()
     {
-        Debug.Log("ÇÃ·¹ÀÌ¾î°¡ ·Î±×¾Æ¿ôÇß½À´Ï´Ù.");
+        Debug.Log("í”Œë ˆì´ì–´ê°€ ë¡œê·¸ì•„ì›ƒí–ˆìŠµë‹ˆë‹¤.");
     }
 
-    //ÇØÃ¼
+    //í•´ì²´
 
-    //OnDestroy : °ÔÀÓ ¿ÀºêÁ§Æ®°¡ »èÁ¦µÉ ¶§
+    //OnDestroy : ê²Œìž„ ì˜¤ë¸Œì íŠ¸ê°€ ì‚­ì œë  ë•Œ
     void OnDestroy()
     {
-        Debug.Log("ÇÃ·¹ÀÌ¾î µ¥ÀÌÅÍ¸¦ ÇØÁ¦ÇÏ¿´½À´Ï´Ù.");
+        Debug.Log("í”Œë ˆì´ì–´ ë°ì´í„°ë¥¼ í•´ì œí•˜ì˜€ìŠµë‹ˆë‹¤.");
     }
 }

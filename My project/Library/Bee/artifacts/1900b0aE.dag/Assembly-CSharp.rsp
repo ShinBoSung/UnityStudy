@@ -355,8 +355,10 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Actor.cs"
+"Assets/keyboard_mouse.cs"
 "Assets/LifeCycle.cs"
 "Assets/NewBehaviourScript.cs"
+"Assets/ObjectMove.cs"
 "Assets/player.cs"
 -langversion:9.0
 
