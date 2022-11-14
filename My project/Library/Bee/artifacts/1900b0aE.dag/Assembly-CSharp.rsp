@@ -358,6 +358,7 @@
 "Assets/keyboard_mouse.cs"
 "Assets/LifeCycle.cs"
 "Assets/Move.cs"
+"Assets/MyBall.cs"
 "Assets/NewBehaviourScript.cs"
 "Assets/ObjectMove.cs"
 "Assets/player.cs"
