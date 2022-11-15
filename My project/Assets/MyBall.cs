@@ -12,7 +12,7 @@ public class MyBall : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         //1.속력 바꾸기
 
@@ -20,7 +20,7 @@ public class MyBall : MonoBehaviour
 
         //2.힘을 가하기
 
-        /*
+        
         if (Input.GetButtonDown("Jump"))
         {
             rigid.AddForce(Vector3.up * 25, ForceMode.Impulse);
@@ -30,10 +30,22 @@ public class MyBall : MonoBehaviour
             0, Input.GetAxisRaw("Vertical"));
 
         rigid.AddForce(vec, ForceMode.Impulse);
-        */
-
+        
         //3.회전력
 
-        rigid.AddTorque(Vector3.down);
+        //rigid.AddTorque(Vector3.down);
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if(other.name == "Cube" )
+        {
+            rigid.AddForce(Vector3.up * 10, ForceMode.Impulse);
+        }        
+    }
+
+    public void Jump()
+    {
+        rigid.AddForce(Vector3.up * 20, ForceMode.Impulse);
     }
 }
